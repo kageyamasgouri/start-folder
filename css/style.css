@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f7;
+    color: #333;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #0056b3;
+}
+
+.skills {
+    background-color: #cce5ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+    color: #004080;
+}
+
+.skill-list li {
+    background: #007bff;
+    color: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.portfolio {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio h2 {
+    color: #004080;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.portfolio-items img {
+    width: 220px;
+    height: 160px;
+    border-radius: 8px;
+    border: 3px solid #007bff;
+    background-color: #f8f9fa;
+    padding: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+label, input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0056b3;
+    color: white;
+    margin-top: 30px;
+    font-weight: bold;
+}
+/* 全体の基本設定・中央揃え */
+body {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background-color: #f5ece5; /* 背景の薄いベージュ色 */
+color: #333;
+text-align: center; /* テキストやカードを中央寄せ */
+}
+
+/* ヘッダー（青いナビゲーションバー） */
+header {
+background-color: #0056b3; /* 鮮やかな青色 */
+color: white;
+padding: 20px 0 30px;
+}
+
+header h1 {
+margin: 0 0 15px 0;
+font-size: 28px;
+}
+
+.nav-list {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+gap: 30px; /* メニュー間の余白 */
+}
+
+.nav-list a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* メインコンテンツ（幅と中央寄せ） */
+main {
+max-width: 900px;
+margin: 0 auto;
+padding: 40px 20px;
+}
+
+/* 自己紹介セクション */
+.profile {
+margin-bottom: 40px;
+}
+
+.profile h2 {
+font-size: 22px;
+margin-bottom: 20px;
+}
+
+/* プロフィール画像を丸く切り抜く */
+.profile img {
+width: 180px;
+height: 240px;
+object-fit: cover;
+border-radius: 50%; /* 楕円形にする */
+border: 2px solid #0056b3; /* 青い枠線 */
+margin-bottom: 15px;
+}
+
+/* カード状のセクション（スキル・ポートフォリオ共通） */
+.skills, .portfolio {
+background-color: #dbe4ee; /* 薄い青グレーの背景 */
+border-radius: 12px;
+padding: 30px 20px;
+margin-bottom: 30px;
+}
+
+.skills h2, .portfolio h2 {
+color: #0056b3;
+margin-top: 0;
+margin-bottom: 20px;
+}
+
+/* スキルボタン風リスト */
+.skill-list {
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.skill-list li {
+background-color: #007bff;
+color: white;
+padding: 8px 16px;
+border-radius: 6px;
+font-weight: bold;
+font-size: 14px;
+}
+
+/* ポートフォリオ作品の並び */
+.portfolio-items {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+flex-wrap: wrap;
+}
+
+.portfolio-items img {
+width: 220px;
+height: auto;
+border-radius: 10px;
+border: 2px solid #007bff;
+background-color: white;
+padding: 5px;
+}
+
+/* フッター */
+footer {
+background-color: #0056b3;
+color: white;
+padding: 15px 0;
+font-size: 14px;
+}
+
