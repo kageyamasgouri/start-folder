@@ -40,8 +40,12 @@ function calculate() {
         }
         result = val1 / val2;
         symbol = '÷';
-    }
-    
-    formulaArea.textContent = `${val1} ${symbol} ${val2}`;
-    resultArea.textContent = `計算結果: ${result}`;
-　　}
+  } else {
+    formulaArea.textContent = '計算式';
+    resultArea.textContent = '演算子が正しくありません。';
+    return;
+}
+// ここだけに表示コードを残す
+formulaArea.textContent = `計算式：${val1} ${symbol} ${val2}`;
+resultArea.textContent = `計算結果：${result}`;
+}  // 関数の終わり
