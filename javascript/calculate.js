@@ -16,7 +16,7 @@ function calculate() {
 
     if (isNaN(val1) || isNaN(val2)) {
         formulaArea.textContent = '計算式';
-        resultArea.textContent = '両方の数値を入力してください。';
+        resultArea.textContent = '両方の数値を入力してください';
         return;
     }
 
@@ -35,7 +35,7 @@ function calculate() {
     } else if (operator === 'division') {
         if (val2 === 0) {
             formulaArea.textContent = '計算式';
-            resultArea.textContent = '0で割ることはできません。';
+            resultArea.textContent = '0で割る事はできません。';
             return;
         }
         result = val1 / val2;
